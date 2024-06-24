@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mediterranean restaurant, focused on traditional recipes served with a modern twist located in Chicago, Illinois.">
+    <meta name="keywords" content="portfolio, Little Lemon, restaurant">
+    <link rel="icon" type="image/png" href="assets\Asset 9@4x.png">
+    <title>Little Lemon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="home-section">
+        <nav class="nav-big-screen">
+            <img src="assets\Asset 18@4x.png" alt="Little Lemon logo">
+            <ul class="link-list">
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#menu-section">Menu</a></li>
+                <li><a href="#book-section">Book</a></li>
+                <li><a href="#about-section">About</a></li>
+            </ul>
+        </nav>
+
+        <nav class="nav-small-screen">
+            <img src="assets\Asset 14@4x.png" alt="Little Lemon logo">
+        </nav>
+
+        <div class="restaurant-quote">
+            <h1>"Indulge in the Mediterranean's culinary symphony, where each bite whispers tales of sun-kissed shores and flavors that dance on your palate."</h1>
+        </div>
+    </section>
+    <main>
+        <section id="menu-section">
+            <div class="title-container">
+                <h1>
+                    Enjoy our Delicacies!
+                </h1>
+            </div>
+            <div class="cards-container">
+                <div class="dish-card">
+                    <img src="assets/Falafel.png" alt="hummus dish picture">
+                    <h1>Falafel</h1>
+                    <p>Golden, crispy falafel, bursting with aromatic spices and herbs, served alongside creamy hummus and tangy tahini sauce, creates a tantalizing Middle Eastern delight that dances on your taste buds with each flavorful bite.</p>
+                    <button>Order Now</button>
+                </div>
+                <div class="dish-card">
+                    <img src="assets/Hummus.png" alt="hummus dish picture">
+                    <h1>Hummus</h1>
+                    <p>Creamy hummus, blended to perfection with garlic, lemon, and tahini, drizzled with extra virgin olive oil and sprinkled with zesty sumac, beckons with its smooth and velvety texture, inviting you to indulge in its irresistible allure.</p>
+                    <button>Order Now</button>
+                </div>
+                <div class="dish-card">
+                    <img src="assets/Quinoa.png" alt="quinoa dish picture">
+                    <h1>Quinoa</h1>
+                    <p>Nutty quinoa, delicately seasoned and mixed with vibrant vegetables, offers a wholesome and satisfying dish that tantalizes your palate with its earthy flavors and hearty texture.</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+        </section>
+        <section id="book-section">
+            <div class="title-container">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="contact-form-container">
+                <label id="email-label" for="email">Email:</label>
+                <input type="text" id="email" name="email" required><br>
+
+                <label id="message-label" for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="10" required></textarea><br>
+                <button>Book it!</button>
+                <img src="assets\Asset 14@4x.png" alt="lemon logo">
+            </div>
+        </section>
+        <section id="about-section">
+            <div class="title-container">
+                <h1>What makes us great!</h1>
+            </div>
+            <div class="article-container">
+                <article class="column-one">
+                    Based in Chicago, Illinois, Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist. The chefs draw inspiration from Italian, Greek, and Turkish culture and have a menu of 12–15 items that they rotate seasonally. The restaurant has a rustic and relaxed atmosphere with moderate prices, making it a popular place for a meal any time of the day.
+                </article>
+                <article class="column-two">
+                    Little Lemon is owned by two Italian brothers, Mario and Adrian, who moved to the United States to pursue their shared dream of owning a restaurant. To craft the menu, Mario relies on family recipes and his experience as a chef in Italy. Adrian does all the marketing for the restaurant and led the effort to expand the menu beyond classic Italian to incorporate additional cuisines from the Mediterranean region.
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <img src="assets\Asset 18@4x.png" alt="Little Lemon logo">
+            <p>&copy; <span id="year"></span> Little Lemon. All Rights Reserved.</p>
+        </nav>
+    </footer>
+
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('year').textContent = currentYear;
+    </script>
+</body>
+</html>
